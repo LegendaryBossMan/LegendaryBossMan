@@ -1,0 +1,7 @@
+public class Welcome4 // Welcome1 is a name
+{
+  public static void main(String[] args)
+  {
+    System.out.printf("Welcome to \nJava Programming!");
+  }
+}

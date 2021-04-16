@@ -1,0 +1,26 @@
+import java.util.Scanner;
+//Compare integers using if statements, relational operators
+  //and Equalaity operators.
+public class AccountTest // Welcome1 is a name
+{
+  //main method
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    
+    Account myAccount = new Account();
+    
+    System.out.printf("Initial name is: %s%n%n", myAccount.getName()); //display initial value of name
+                      
+     //Prompt for and read name
+                      
+                      System.out.println("Please enter the name:");
+                      String theName = input.nextLine();// read line of text
+                      myAccount.setName(theName); //Put name in my account
+                      System.out.println();//Outputs blank line
+                      //display the name stored in object myAccount
+                      
+                      System.out.printf("Name in object my account is:%n%s%n", myAccount.getName()); 
+                      input.close();
+  }//end main
+}//end of Class Account test

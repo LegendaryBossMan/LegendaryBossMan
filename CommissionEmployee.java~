@@ -1,0 +1,53 @@
+  public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, 
+                            double grossSales, double commissionRate)
+  {
+    //implicit call to Object's default constructor occurs here
+    
+    //if grossSales is invalid, throw an exception
+    
+   
+    
+    //if commissionRate is invalid, throw an exception, set variables to parameters
+  
+
+  }//end constructor
+  
+  //return first name
+  public String getFirstName()
+
+  
+   //return last name
+  public String getLastName()
+ 
+  
+  //return social security number
+  public String getSocialSecurityNumber()
+ 
+  
+  //set gross sales amount, throw exception if out of bounds
+  public void setGrossSales(double grossSales)
+
+  
+  //return gross sales amount
+
+  
+  //set commission rate, throw exception if out of bounds
+   public void setCommissionRate(double commissionRate)
+
+   
+    //return commissionRate
+  public double getCommissionRate()
+
+  
+  //calculate earnings
+  public double earnings()
+
+  //return String representation of CommissionEmployeeObject 
+  @Override //indicates that this method overrides a superclass method
+  public String toString()
+  {
+    return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f", "commission employee", firstName, lastName, 
+                         "social security number", socialSecurityNumber,"gross sales", grossSales, 
+                         "commissionRate", commissionRate);
+  }
+}
